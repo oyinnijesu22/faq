@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+.container{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: hsl(237, 12%, 33%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+    
+
+}
+.main{
+    width: 80%;
+    margin: 100px 0;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image:url( https://res.cloudinary.com/sieger1/image/upload/v1619185846/illustration-woman-online-desktop_ftbbcr.svg), url(https://res.cloudinary.com/sieger1/image/upload/v1619185804/bg-pattern-desktop_v0hfhq.svg);
+    background-position: top 40% right 113%, top 69% right 350%;
+    background-repeat: no-repeat;
+    background-size: 40%, 80%;
+    display: flex;
+   
+   
+}
+.box{
+  
+    width: 40%;
+}
+.boximg{
+    position: absolute;
+    top: 47%;
+    left: 4%;
+    width: 13%;
+   
+
+}
+.faq{
+    margin-top: 60px;
+    margin-right: 10px;
+  margin-bottom:100px;
+    width: 60%;
+}
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.questions{
+   width: 90%;
+   margin-top: 55px;
+   margin-left: 20px;
+}
+.question{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+h2{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+h2:hover{
+    color: hsl(14, 88%, 55%)
+}
+.arrow{
+    width: 10px;
+    height: 8px;
+    margin-top: 5px;
+}
+.one{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+@media screen and ( max-width: 688px ){
+    .main{
+        flex-direction: column;
+        width: 80vw;
+    height: 70vh;
+       
+    background-image: none;
+ 
+    
+    }
+    .container{
+        position: relative;
+    }
+    .arrow{
+        width: 7px;
+        height: 5px;
+        margin-top: 5px;
+    }
+    .box{
+  
+        margin: auto;
+        height: 160px;
+        width: 60%;
+        background-image: url(https://res.cloudinary.com/sieger1/image/upload/v1619185846/illustration-woman-online-mobile_qkrs2h.svg), url(https://res.cloudinary.com/sieger1/image/upload/v1619185846/bg-pattern-mobile_j55ojc.svg);
+        background-size: 180px, 170px;
+        background-position: top left 25%, bottom 20% left 55%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 3%;
+        left: 20%;
+        
+    }
+    h1{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .boximg{
+        display: none;
+    }
+    .faq{
+       width: 90%;
+       text-align: center;
+       
+     
+    }
+    h2{
+        font-size: 11px;
+        font-weight: 300;
+    
+    }
+    .faq{
+        margin-top: 100px;
+    }
+}
